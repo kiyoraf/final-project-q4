@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm a web developer in training. Below is a gallery of my favorite things/work.</p>
+        </section>
+
+        <section class="carousel-container">
+            <h2>Featured Gallery</h2>
+            <div class="carousel">
+                <div class="carousel-slide active">
+                    <img src="https://picsum.photos/800/400?random=1" alt="Project 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://picsum.photos/800/400?random=2" alt="Project 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://picsum.photos/800/400?random=3" alt="Project 3">
+                </div>
+
+                <button id="prevBtn">&#10094;</button>
+                <button id="nextBtn">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio. Built for Track 2 WebDev.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
