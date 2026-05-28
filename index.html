@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore San Diego | Your Local Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">SD<span>Guide</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-home-btn">Home</a></li>
+                <li><a href="#attractions" class="nav-attractions-btn">Attractions</a></li>
+                <li><a href="#itinerary">Itinerary Planner</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Discover Sunny San Diego</h1>
+                <p>Explore pristine beaches, world-class parks, and vibrant historic neighborhoods with insider local tips.</p>
+                <button id="start-quiz-btn" class="btn">Start Exploring</button>
+            </div>
+        </section>
+
+        <section id="attractions" class="section">
+            <h2 class="section-title">Top Local Spots</h2>
+            <p class="section-subtitle">Click on any card to dive deep into local insider travel info.</p>
+            <div id="attractions-grid" class="grid-container">
+                </div>
+        </section>
+
+        <section id="itinerary" class="section bg-light">
+            <h2 class="section-title">Build Your Perfect Day</h2>
+            <p class="section-subtitle">Select your travel style to generate a curated local itinerary.</p>
+            
+            <div class="planner-container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-style="relax">Relaxed Beach Day</button>
+                    <button class="filter-btn" data-style="adventure">Active Adventure</button>
+                    <button class="filter-btn" data-style="family">Family Friendly</button>
+                </div>
+
+                <div id="itinerary-display" class="itinerary-box"></div>
+            </div>
+        </section>
+    </main>
+
+    <div id="quiz-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="quiz-container">
+                <h2 id="question-text">Loading Question...</h2>
+                <div id="answer-buttons" class="quiz-options"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="details-page" class="details-view hidden">
+        <div class="details-hero" id="details-hero-bg">
+            <div class="details-hero-content">
+                <button id="back-to-home" class="btn-secondary">← Back to Main Guide</button>
+                <h1 id="details-title">Spot Name</h1>
+                <p id="details-tagline">Spot Tagline</p>
+            </div>
+        </div>
+        <div class="details-body">
+            <h2>Why You'll Love It</h2>
+            <p id="details-description">Deep dive information goes here...</p>
+            
+            <h3>Insider Local Tips</h3>
+            <ul id="details-tips"></ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 SDGuide. Local Tour Guide Project.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
